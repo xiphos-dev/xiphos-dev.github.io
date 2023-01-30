@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StarCraft strategy recognition</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header >
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+       
+
+       
+    </header>
+    <div id="lead-sc">
+        <div id="lead-content-sc">
+            <h1>Strategy recognition</h1>
+            <h2>Computer Science Thesis</h2>
+        </div>
+    <div id="lead-overlay"></div>
+
+
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">Strategy recognition</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Explored and parsed dataset comprised of about 1 million game replays to prepare for model training. Using feature engineering I designed 6 different types of input vectors to be used for training neural networks in human strategy recognition in StarCraft II. I trained dense, recurrent and convolutional networks and obtained information about which data and model yielded the best results for future applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+    <div id="education" class="background-alt">
+        <h2 class="heading">Recognizing intention</h2>
+        <div class="descripcion">
+            <p>
+                StarCraft II combines an incomplete information scenario with strategic decision making. In order to win, a player must dominate his opponent using militaristic means. As such, gathering information and insight into the opponent's plans is paramount. Humans are accustomed to interpreting information rich in context and detail, and as such, seem to have an edge over algorithms that attempt to accomplish the same: most AI's designed to play games are inferior to highly skilled human players, with few notable exceptions such as DeepBlue or AlphaZero. My work seeks to find tools that can be effectively applied to this problem and others like it.
+            </p>
+        </div>
+
+        <div class="imagen">
+            <img src="images/matriz.png" />
+        </div>
+
+        <div class="descripcion">
+            <p>
+                The figure above showcases the confusion matrix associated to one of the better performing models. This particular network contains 60 LSTM cells, and its input vector has a sequence of events transpired in the game. The model achieved a precision score of 0.653 and a recall score of 0.649 while classifying samples over 35 categories and using incomplete information for each one, in order to simulate a real scenario's circumstances. 
+            </p>
+        </div>
+    </div>
+    <!-- End #education -->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2023</span> Nicolás Pino
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/xiphos-dev" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/nicolás-pino/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
