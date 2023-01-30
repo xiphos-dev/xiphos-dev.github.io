@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Nuestro equipo desarrolló una herramienta de apoyo para vendedores en mercados en línea. El usuario debe ingresar información básica sobre su producto, como nombre, modelo y categoría, por ejemplo, electrónica, utensilios de cocina o vestimenta deportiva. Con esta información Price2Be mostrará información relevante acerca del producto, como etiquetas populares que pueden usarse para hacer publicidad al producto en redes sociales, la popularidad del producto de acuerdo al número de búsquedas relacionadas en internet divididas por región dentro de Chile, entre otras piezas de información útiles para los vendedores. Usando una red neuronal densa, la herramienta también entrega una sugerencia para el precio de venta del producto, además de mostrar una proyección para el precio dentro de los siguientes 3 meses. Dado que la demanda de ciertos productos fluctua con las temporadas, la proyección del precio puede entregar información valiosa sobre el cambio de precio para estos casos.
+                        Nuestro equipo desarrolló una herramienta de apoyo para vendedores en mercados en línea. El usuario debe ingresar información básica sobre su producto, como nombre, modelo y categoría, por ejemplo, electrónica, utensilios de cocina o vestimenta deportiva. Con estos datos Price2Be mostrará información relevante acerca del producto, como etiquetas populares que pueden usarse para hacer publicidad al producto en redes sociales, la popularidad del producto de acuerdo al número de búsquedas relacionadas en internet divididas por región dentro de Chile, entre otras piezas de información útiles para vendedores. Usando una red neuronal densa, la herramienta también entrega una sugerencia para el precio de venta del producto, además de mostrar una proyección para el precio dentro de los siguientes 3 meses. Dado que la demanda de ciertos productos fluctúa con las temporadas, la proyección del precio puede entregar información valiosa sobre el producto para estos casos.
 
                     </p>
                 </div>
@@ -66,7 +66,7 @@
                     Analizar datos de ventas y aplicar ingeniería de características.
                 </li>
                 <li>
-                    Entrenar y verificar redes neuronales densas.
+                    Entrenar y probar redes neuronales densas.
                 </li>
                 <li>
                     Despligue de pipeline para facilitar la integración del resto de módulos con la sugerencia de precios.
@@ -80,7 +80,7 @@
 
         <div class="descripcion">
                     <p>
-                        La imagen muestra las métricas de error obtenidas para cada subgrupo de categorías en el conjunto de datos. Un modelo fue entrenado para cada uno de ellos. Dado que las redes usadas realizaron una regresión sobre la variable precio, la cual fue escalada mediante un logaritmo, la métrica de error escogida fue Root Median Squared Logarithmic Error (RMSLE). Para esta métrica un valor cercano a cero indica un mejor desempeño. Para la primera iteración, como prueba de concepto, un único modelo fue empleado para todas las predicciones, sin embargo, análisis de los datos llevó a entrenar diferentes modelos para categorías particulares. Esta decisión se debió a la diferencia en la cantidad de datos de entrenamiento para cada categoría y el subsecuente efecto negativo que esto tiene en los modelos entrenados. La versión final de Price2Be usó 16 modelos para la predicción de precios, efectivamente aislando las categorías de mejor desempeñó de aquellas que poseen una menor cantidad de ejemplos de entrenamiento. Lo anterior fue logrado manteniendo el mínimo desempeño requerido para cada modelo.
+                        La imagen muestra las métricas de error obtenidas para cada subgrupo de categorías en el conjunto de datos. Un modelo fue entrenado para cada uno de ellos. Dado que las redes usadas realizaron una regresión sobre la variable precio, la cual fue escalada mediante un logaritmo, la métrica de error escogida fue Root Median Squared Logarithmic Error (RMSLE). Para esta métrica un valor cercano a cero indica un mejor desempeño. Para la primera iteración, como prueba de concepto, un único modelo fue empleado para todas las predicciones, sin embargo, el análisis de los datos llevó a entrenar diferentes modelos para categorías particulares. Esta decisión se debió a la diferencia en la cantidad de datos de entrenamiento para cada categoría y el subsecuente efecto negativo que esto tiene en los modelos entrenados. La versión final de Price2Be usa 16 modelos para la predicción de precios, efectivamente aislando las categorías de mejor desempeñó de aquellas que poseen una menor cantidad de ejemplos de entrenamiento. Lo anterior fue logrado manteniendo el mínimo desempeño requerido para cada modelo.
                     </p>
         </div>
     </div>
